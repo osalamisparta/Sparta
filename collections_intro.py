@@ -24,3 +24,10 @@ for item in emb_list:
     print(item)
     for number in item:
         print(number)
+
+#Embedded dictionaries
+dict_data = {1:{'name':'Tobi', 'Course':'Data'},2:{'name':'Jim', 'Course':'Dev'}}
+for item in dict_data.values():
+    print(item)
+    for key in item.values():
+        print(key)
