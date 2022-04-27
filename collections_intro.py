@@ -17,3 +17,10 @@ print(car_parts)
 #Frozen sets are immutable
 x = frozenset([1,2,3,4])
 print(x)
+
+#Embedded lists
+emb_list = [[1,2,3],[4,5,6]]
+for item in emb_list:
+    print(item)
+    for number in item:
+        print(number)
