@@ -67,7 +67,7 @@ names = ["Alan Turing", "Leonardo Fibonacci", "Katherine Johnson", "Annie Easley
 # A2c:
 list = []
 for space in names:
-    list.append(space[0]+space[space.index(' ')+1])
+    list.append(space[0] + space[space.index(' ')+1])
 print(list)
 
 # -------------------------------------------------------------------------------------- #
@@ -85,7 +85,7 @@ list_of_lists = [[1,5,7,3,44,4,1],
 for l in list_of_lists:
     if len(l) == len(set(l)):
         print (l)
-
+#
 # -------------------------------------------------------------------------------------- #
 
 print("\nQ4a\n")
@@ -116,6 +116,5 @@ while count < int(num)-1:
         print('Not Prime')
         break
 
-count +=1
-if count == num:
+if count == num - 1 :
     print ('Prime')
