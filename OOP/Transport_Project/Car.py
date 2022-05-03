@@ -1,7 +1,6 @@
 import Vehicle
 
-
-class Car(Vehicle):
+class Car(Vehicle.Vehicle):
     def __init__(self):
         super().__init__()
         self._top_speed = 253.81

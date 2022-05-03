@@ -1,7 +1,7 @@
 import Vehicle
 
 
-class Train(Vehicle):
+class Boat(Vehicle.Vehicle):
     def __init__(self):
         super().__init__()
         self._top_speed = 317
@@ -32,3 +32,5 @@ class Train(Vehicle):
 
     def horn(self):
         print ("HOONK HOOONK!")
+
+

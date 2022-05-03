@@ -36,8 +36,4 @@ class car:
 
 
 my_car = car('bugatti','blue', 170 )
-while True:
-    my_car.accel()
-    if my_car.get_speed() == my_car.top_speed:
-        break
-
+my_car.get_speed()

@@ -1,5 +1,5 @@
 class Vehicle:
-    def __init__(self, vehicle_type=''):
+    def __init__(self):
         self._speed = 0
 
     def get_speed(self):

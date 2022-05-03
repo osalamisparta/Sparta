@@ -1,6 +1,6 @@
 import Vehicle
 
-class Train(Vehicle):
+class Train(Vehicle.Vehicle):
     def __init__(self):
         super().__init__()
         self._top_speed = 268

@@ -1,7 +1,7 @@
 import Vehicle
 
 
-class Skateboard(Vehicle):
+class Skateboard(Vehicle.Vehicle):
     def __init__(self):
         super().__init__()
         self._top_speed = 91.17

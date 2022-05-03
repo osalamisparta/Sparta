@@ -1,7 +1,7 @@
 import Vehicle
 
 
-class Spaceship(Vehicle):
+class Spaceship(Vehicle.Vehicle):
     def __init__(self):
         super().__init__()
         self._top_speed = 17500
