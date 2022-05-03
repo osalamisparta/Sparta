@@ -1,16 +1,12 @@
-class car:
+import Vehicle
 
-    def __init__(self, model:str, colour:str, top_speed):
-        self._speed = 0
-        self.model = model
-        self.colour = colour
-        self.top_speed = top_speed
 
-    def get_speed(self):
-        return self._speed
-
-    def set_speed(self,x):
-        self._speed = x
+class Car(Vehicle):
+    def __init__(self):
+        super().__init__()
+        self._top_speed = 253.81
+        self.description = "Cars accelerate on roads and follow road laws."
+        self.has_wheels = True
 
     def accel(self, accel: str = ''):
         accel = accel.lower
@@ -33,11 +29,4 @@ class car:
         if self._speed <= 0 :
             self._speed = 0
         print("Current speed: ", self._speed)
-
-
-my_car = car('bugatti','blue', 170 )
-while True:
-    my_car.accel()
-    if my_car.get_speed() == my_car.top_speed:
-        break
 

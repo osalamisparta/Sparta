@@ -1,21 +1,17 @@
-class car:
+import Vehicle
 
-    def __init__(self, model:str, colour:str, top_speed):
-        self._speed = 0
-        self.model = model
-        self.colour = colour
-        self.top_speed = top_speed
 
-    def get_speed(self):
-        return self._speed
-
-    def set_speed(self,x):
-        self._speed = x
+class Skateboard(Vehicle):
+    def __init__(self):
+        super().__init__()
+        self._top_speed = 91.17
+        self.description = "Skateboards are boards that rely on momentum pushed typically from a human."
+        self.has_wheels = False
 
     def accel(self, accel: str = ''):
         accel = accel.lower
 
-        accelfac = float(1.5)
+        accelfac = float(0.5)
 
         if self._speed < self.top_speed and self._speed >= 0:
             self._speed = (self._speed + 1) * accelfac
@@ -26,18 +22,10 @@ class car:
     def decel(self, decel: str = ''):
 
         decel = decel.lower
-        decelfac = float(1/1.5)
+        decelfac = float(1/0.5)
 
         if self._speed <= self.top_speed and self._speed > 0:
             self._speed = (self._speed - 1) * decelfac
         if self._speed <= 0 :
             self._speed = 0
         print("Current speed: ", self._speed)
-
-
-my_car = car('bugatti','blue', 170 )
-while True:
-    my_car.accel()
-    if my_car.get_speed() == my_car.top_speed:
-        break
-
