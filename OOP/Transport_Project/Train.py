@@ -3,7 +3,7 @@ import Vehicle
 class Train(Vehicle.Vehicle):
     def __init__(self):
         super().__init__()
-        self._top_speed = 268
+        self.top_speed = 268
         self.description = "Trains follow tracks and are mainly electric."
         self.has_wheels = False
 

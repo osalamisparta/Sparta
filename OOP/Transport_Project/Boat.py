@@ -4,7 +4,7 @@ import Vehicle
 class Boat(Vehicle.Vehicle):
     def __init__(self):
         super().__init__()
-        self._top_speed = 317
+        self.top_speed = 317
         self.description = "Boats are used on bodies of water. Beware of the waves!"
         self.has_wheels = False
 

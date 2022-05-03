@@ -4,7 +4,7 @@ import Vehicle
 class Skateboard(Vehicle.Vehicle):
     def __init__(self):
         super().__init__()
-        self._top_speed = 91.17
+        self.top_speed = 91.17
         self.description = "Skateboards are boards that rely on momentum pushed typically from a human."
         self.has_wheels = False
 

@@ -9,3 +9,7 @@ from Skateboard import Skateboard
 
 tony_hawks_car = Car()
 print(tony_hawks_car.get_speed())
+tony_hawks_car.accel()
+tony_hawks_car.accel()
+tony_hawks_car.accel()
+print(tony_hawks_car.get_speed())

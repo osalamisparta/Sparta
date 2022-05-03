@@ -4,7 +4,7 @@ import Vehicle
 class Spaceship(Vehicle.Vehicle):
     def __init__(self):
         super().__init__()
-        self._top_speed = 17500
+        self.top_speed = 17500
         self.description = "Space shuttle are used for travel in space"
         self.has_wheels = False
 
