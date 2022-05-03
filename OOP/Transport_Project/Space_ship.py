@@ -32,4 +32,6 @@ class Spaceship(Vehicle.Vehicle):
 
     def take_off(self):
         print ("Euston, we have lift off!")
+        self.set_speed(10000)
+        print("Current speed: ", self._speed)
 

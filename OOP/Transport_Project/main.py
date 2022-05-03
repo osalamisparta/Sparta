@@ -20,3 +20,7 @@ skateboard.ollie()
 skateboard.christ_air()
 skateboard.accel()
 print(skateboard.get_speed())
+
+shuttle = Spaceship()
+print(shuttle.description)
+shuttle.take_off()
