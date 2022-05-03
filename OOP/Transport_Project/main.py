@@ -28,3 +28,9 @@ print("Does the shuttle have wheels? : ", shuttle.has_wheels)
 
 vehicle = Vehicle()
 print(vehicle.description)
+
+boat = Boat()
+print (boat.description)
+
+train = Train()
+print (train.description)
