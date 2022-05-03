@@ -24,3 +24,7 @@ print(skateboard.get_speed())
 shuttle = Spaceship()
 print(shuttle.description)
 shuttle.take_off()
+print("Does the shuttle have wheels? : ", shuttle.has_wheels)
+
+vehicle = Vehicle()
+print(vehicle.description)
