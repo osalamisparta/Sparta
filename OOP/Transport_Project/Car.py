@@ -30,3 +30,5 @@ class Car(Vehicle):
             self._speed = 0
         print("Current speed: ", self._speed)
 
+    def horn(self):
+        print ("BEEP BEEP!")

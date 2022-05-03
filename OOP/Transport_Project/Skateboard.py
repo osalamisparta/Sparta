@@ -29,3 +29,12 @@ class Skateboard(Vehicle):
         if self._speed <= 0 :
             self._speed = 0
         print("Current speed: ", self._speed)
+
+    def ollie(self):
+        print("Nice Ollie!")
+
+    def christ_air(self):
+        print("Nice Chist Air!")
+
+    def kick_flip(self):
+        print("Nice Kick Flip!")

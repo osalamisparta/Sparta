@@ -29,3 +29,6 @@ class Train(Vehicle):
         if self._speed <= 0 :
             self._speed = 0
         print("Current speed: ", self._speed)
+
+    def horn(self):
+        print ("HOONK HOOONK!")
