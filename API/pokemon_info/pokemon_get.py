@@ -12,6 +12,7 @@ class Pokemon():
         self.weight = []
         self.games = []
         self.pokemon_data = []
+        self.location_area_encounters = []
 
     def get_my_pokemon (self, pokemon_name):
         pokemon = requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon_name}")
@@ -24,6 +25,7 @@ class Pokemon():
         self.get_height()
         self.get_weight()
         self.get_games()
+        self.get_LAE()
 
 
 
@@ -36,7 +38,7 @@ class Pokemon():
         self.name = self.pokemon_data['name']
 
     def get_base_exp(self):
-        self.base_exp = self.pokemon_data['base_experience']
+        self.base_experience = self.pokemon_data['base_experience']
 
     def get_height(self):
         self.height = self.pokemon_data['height']
@@ -48,6 +50,16 @@ class Pokemon():
         games_indices = self.pokemon_data['game_indices']
         for game in games_indices:
             self.games.append(game['version']['name'])
+
+    def get_LAE(self):
+        lae = requests.get(self.pokemon_data['location_area_encounters'])
+        lae = lae.content
+        lae = json.loads(lae)
+        for areas in lae:
+            self.location_area_encounters.append(areas['location_area']['name'])
+
+
+
 
 
 
