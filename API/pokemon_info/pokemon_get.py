@@ -7,7 +7,7 @@ class Pokemon():
     def __init__(self):
         self.name = ''
         self.abilities = []
-        self.base_exp = []
+        self.base_experience = []
         self.height = []
         self.weight = []
         self.games = []
